@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Azure;
+using CommandsApi.Attributes;
 using CommandsApi.Data;
 using CommandsApi.Dtos.Read;
 using CommandsApi.Dtos.Write;
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsApi.Controllers
 {
+    [ApiKeyAuth]
     [Route("api/[controller]")]
     [ApiController]
     public class CommandsController : ControllerBase
