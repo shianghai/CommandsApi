@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     [ApiController]
     public class CommandsController : ControllerBase
     {
